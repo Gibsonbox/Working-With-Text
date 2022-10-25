@@ -1,7 +1,8 @@
 import sys
 
-def start():"""
-Starting function which is called to initially start the program
+def start():
+    """
+Docstring test
 """
 
     sentence = input()
