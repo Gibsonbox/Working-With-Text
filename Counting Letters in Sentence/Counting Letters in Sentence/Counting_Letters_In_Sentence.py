@@ -2,7 +2,7 @@ import sys
 
 def start():
     """
-Docstring test
+Docstring test 
 """
 
     sentence = input()
