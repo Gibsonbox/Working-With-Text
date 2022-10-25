@@ -1,6 +1,9 @@
 import sys
 
-def start():
+def start():"""
+Starting function which is called to initially start the program
+"""
+
     sentence = input()
     sentence = sentence.lower()
     length = len(sentence)
