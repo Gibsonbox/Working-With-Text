@@ -2,8 +2,9 @@ import sys
 
 def start():
     """
-Docstring test 
-"""
+    This is an experiment to see if I can create a letter counter in an input string without using the '.count. list function which is built into Python.
+    
+    """
 
     sentence = input()
     sentence = sentence.lower()
@@ -12,6 +13,8 @@ Docstring test
     already_Counted = 0
 
     for i in sentence:
+        if i == ' ':
+            continue
         x = (letter_Counter.index(i)+1) #Variable to check if the letter already has a occured
         counter = 1
         if i == 'a':
@@ -303,20 +306,19 @@ Docstring test
         else:
             continue
 
-    print("Your sentence is " + str(length) + "characters long.")
+    print("Your sentence is " + str(length) + " characters long.")
     print("The letter breakdown is")
     print(letter_Counter)
 
+    #Temporary cheat by using .count to include a word counter
+    wordCounter = sentence.count(' ')
+    print("\nThe number of words in that sentence is: " + str(wordCounter+1) + ". ")
 
-x = ", ".join(["spam", "eggs", "ham"])
-print(x)
+
+
+#x = ", ".join(["spam", "eggs", "ham"])
+#print(x)
 #prints "spam, eggs, ham"
 #Could use something like this to print numbers of letters found and only if the letter is found.
-
-str = "some text goes here"
-x = str.split(' ')
-print(x)
-#Could use this to create a word counter.
-
 
 start()
