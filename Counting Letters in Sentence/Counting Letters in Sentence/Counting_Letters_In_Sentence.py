@@ -6,8 +6,7 @@ def start():
     
     """
 
-    sentence = input()
-    sentence = sentence.lower()
+    sentence = input().lower()
     length = len(sentence)
     letter_Counter = list("abcdefghijklmnopqrstuvwxyz")
     already_Counted = 0
